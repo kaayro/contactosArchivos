@@ -17,7 +17,7 @@ var f = {
 		if(f.action == 0)
 			fileEntry.createWriter(f.gotFileWriter, f.fail);
 		else
-			f.readAsText(fileEntry);
+			fileEntry.file(f.readAsText);
 		
 	},
 	gotFileWriter: function(writer) {
