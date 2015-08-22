@@ -9,6 +9,8 @@ var fn = {
 	init: function(){
 		$('#ncSend').tap(fn.crearContacto);
 		$('#cListar').tap(cn.findContacts);
+		$('#aEscribir').tap(f.createFile);
+		$('#aLeer').tap(f.readFile);
 	},
 	crearContacto: function(){
 		var n = $('#ncNom').val();
@@ -18,7 +20,7 @@ var fn = {
 		if(n != '' && t != '' && m != '')
 			cn.createContact(n,t,m);
 		else
-			alert("Todos los campos son requerido");
+			alert("Todos los campos son requeridos");
 	}
 };
 
